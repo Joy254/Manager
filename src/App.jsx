@@ -13,3 +13,12 @@ import ProjectList from './components/ProjectList';
 import CategoryList from './components/CategoryList';
 import ReminderList from './components/ReminderList';
 import CommentList from './components/CommentList';
+
+const App = () => {
+  const [currentUser, setCurrentUser] = useState(null);
+  const [tasks, setTasks] = useState([]);
+  const [projects, setProjects] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [reminders, setReminders] = useState([]);
+  const [comments, setComments] = useState([]);
+}
