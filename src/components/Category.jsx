@@ -1,11 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-function Category() {
+const Category = ({ category, handleSelectCategory, isSelected }) => {
   return (
-    <div>
-      
+    <div
+      className={`category-item ${isSelected ? 'selected' : ''}`}
+      onClick={() => handleSelectCategory(category.id)}
+    >
+      {category.name}
     </div>
-  )
-}
+  );
+};
 
-export default Category
+export default Category;
